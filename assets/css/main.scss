@@ -1,4 +1,57 @@
 ---
 ---
 
+@import url("https://use.typekit.net/okf0ozn.css");
 @import 'bootstrap/bootstrap';
+
+// Mixin
+@mixin transition {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+// Nav
+.navbar-brand {
+  &:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  img {
+    height: 60px;
+    @include transition;
+  }
+}
+
+// Defaults
+.btn {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+// Sections
+section {
+  position: relative;
+  @include media-breakpoint-up(md) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+.section {
+  &--hero {
+    @include media-breakpoint-up(md) {
+      padding-top: 10rem;
+      padding-bottom: 12rem;
+    }
+  }
+  &--lg {
+    @include media-breakpoint-up(md) {
+      padding-top: 9rem;
+      padding-bottom: 9rem;
+    }
+  }
+}
+
+// Footer
+footer {
+  .footer-brand img { height: 60px; }
+}

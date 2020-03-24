@@ -1,0 +1,29 @@
+<footer class="footer pt-10 pt-lg-11 pb-4 bg-light text-dark mt-n9">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <a class="footer-brand" href="./index.html">
+          <img src="{{ '/assets/img/pauseofsted.svg' | relative_url }}" alt="{{ site.title }}">
+        </a>
+        <h6 class="text-primary pt-4 pb-5">#{{ site.title }}</h6>
+        <!-- List -->
+        <ul class="list-inline list-group-flush list-group-borderless mb-0">
+          {% for item in site.data.navigation %}
+          <li class="list-inline-item px-0 px-sm-2">
+            <a href="{{ item.link }}" target="_blank" class="text-gray">{{ item.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <!-- End List -->
+      </div>
+    </div>
+    <hr class="mb-5">
+    <div class="row">
+      <div class="col mb-4 mb-md-0">
+        <div class="d-flex text-center justify-content-center align-items-center">
+          <p class="small text-gray mb-0">© <a href="{{ site.url }}" target="_blank">#{{ site.name }}</a> <span class="current-year">{{ 'now' | date: '%Y' }}</span>. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

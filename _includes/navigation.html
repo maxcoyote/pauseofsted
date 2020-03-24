@@ -1,0 +1,19 @@
+<div class="d-none d-lg-flex">
+  <ul class="navbar-nav m-auto">
+    {% for item in site.data.navigation %}
+    <li class="nav-item">
+      <a href="{{ item.link }}" class="nav-link{% if page.url == item.link %} active{% endif %}">{{ item.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="d-block d-lg-none" id="navbarMobile">
+  <ul class="navbar-nav m-auto">
+    {% for item in site.data.navigation %}
+    <li class="nav-item">
+      <a href="{{ item.link }}" class="nav-link{% if page.url == item.link %} active{% endif %}">{{ item.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
