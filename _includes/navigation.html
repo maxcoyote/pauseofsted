@@ -7,7 +7,9 @@
     {% endfor %}
   </ul>
 </div>
-
+<a class="navbar-brand text-center m-auto d-inline-block d-lg-none" href="/">
+  <img class="navbar-brand-dark" src="{{ '/assets/img/pauseofsted.svg' | relative_url }}" alt="{{ site.name }}">
+</a>
 <div class="d-block d-lg-none" id="navbarMobile">
   <ul class="navbar-nav m-auto">
     {% for item in site.data.navigation %}

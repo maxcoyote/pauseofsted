@@ -1,0 +1,126 @@
+.icon.icon-sm i, .icon.icon-sm svg { font-size: 1.5rem; }
+.btn-link { padding: 0; }
+
+// Facebook
+.btn-facebook {
+  color: #fff;
+  background-color: #3b5999;
+  border-color: #3b5999;
+
+  &:hover {
+    color: #fff;
+    background-color: #3b5999;
+    border-color: #3b5999;
+  }
+
+  &.focus, &:focus {
+    box-shadow: 0 1.5rem 4rem rgba(42, 53, 79, 0.05), 0 0 0 0.0625rem rgba(59, 89, 153, 0.5);
+  }
+
+  &.disabled, &:disabled {
+    color: #fff;
+    background-color: #3b5999;
+    border-color: #3b5999;
+  }
+
+  &:not(:disabled):not(.disabled) {
+    &.active, &:active {
+      color: #fff;
+      background-color: #3b5999;
+      border-color: #3b5999;
+    }
+  }
+}
+
+.show > .btn-facebook.dropdown-toggle {
+  color: #fff;
+  background-color: #3b5999;
+  border-color: #3b5999;
+}
+
+.btn-facebook:not(:disabled):not(.disabled) {
+  &.active:focus, &:active:focus {
+    box-shadow: none;
+  }
+}
+
+.show > .btn-facebook.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.btn-facebook.btn-link {
+  color: #3b5999;
+  background: 0 0;
+  box-shadow: none;
+  border: 0;
+  border-style: none;
+
+  &.active, &:focus, &:hover {
+    background-color: transparent !important;
+    box-shadow: none;
+    border: 0;
+    color: #3b5999;
+  }
+}
+
+// Twitter
+.btn-twitter {
+  color: #fff;
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+
+  &:hover {
+    color: #fff;
+    background-color: #1da1f2;
+    border-color: #1da1f2;
+  }
+
+  &.focus, &:focus {
+    box-shadow: 0 1.5rem 4rem rgba(42, 53, 79, 0.05), 0 0 0 0.0625rem rgba(29, 161, 242, 0.5);
+  }
+
+  &.disabled, &:disabled {
+    color: #fff;
+    background-color: #1da1f2;
+    border-color: #1da1f2;
+  }
+
+  &:not(:disabled):not(.disabled) {
+    &.active, &:active {
+      color: #fff;
+      background-color: #1da1f2;
+      border-color: #1da1f2;
+    }
+  }
+}
+
+.show > .btn-twitter.dropdown-toggle {
+  color: #fff;
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.btn-twitter:not(:disabled):not(.disabled) {
+  &.active:focus, &:active:focus {
+    box-shadow: none;
+  }
+}
+
+.show > .btn-twitter.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.btn-twitter.btn-link {
+  color: #1da1f2;
+  background: 0 0;
+  box-shadow: none;
+  border: 0;
+  border-style: none;
+
+  &.active, &:focus, &:hover {
+    background-color: transparent !important;
+    box-shadow: none;
+    border: 0;
+    color: #1da1f2;
+  }
+}
